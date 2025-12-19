@@ -1,0 +1,329 @@
+.home-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home-header {  
+  background: hsl(160, 28%, 38%);
+  color: white;
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section {
+  position: relative;
+  background: linear-gradient(135deg, #9199ba 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 22px;
+  margin: 0 0 40px 0;
+  opacity: 0.95;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 16px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: white;
+  color: #667eea;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background: #f0f0f0;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.features-section {
+  padding: 80px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #333;
+  margin: 0 0 50px 0;
+  font-weight: 700;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature {
+  background: #f8f9ff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
+  border-color: #090909;
+  background: white;
+}
+
+.feature-icon-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #667eea 0%, #3b096e 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.feature h3 {
+  color: #667eea;
+  font-size: 28px;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0;
+}
+
+.blood-groups-section {
+  background: linear-gradient(135deg, #f5f5f5 0%, #f0f0f0 100%);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.blood-groups-section h2 {
+  font-size: 42px;
+  color: #333;
+  margin: 0 0 50px 0;
+  font-weight: 700;
+}
+
+.blood-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blood-group {
+  background: #667eea;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.blood-group:hover {
+  transform: scale(1.08) translateY(-5px);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5);
+  background: #764ba2;
+}
+
+.home-footer {
+  background: #4b7454;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.home-footer p {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .home-nav {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero-section {
+    padding: 50px 20px;
+    min-height: auto;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 14px 30px;
+  }
+
+  .features-section {
+    padding: 50px 20px;
+  }
+
+  .features-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .blood-groups-section {
+    padding: 50px 20px;
+  }
+
+  .blood-groups-section h2 {
+    font-size: 32px;
+  }
+
+  .blood-groups {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+  }
+
+  .blood-group {
+    padding: 20px 15px;
+    font-size: 24px;
+  }
+}
